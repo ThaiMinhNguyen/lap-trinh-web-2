@@ -22,10 +22,10 @@
       <title>Đăng nhập</title>
 </head>
 
-<body class="bg-danger h-100 w-100">
+<body class="bg-primary h-100 w-100">
     <div class="container d-flex w-100 justify-content-center align-items-center">
         <div class="container" id="loginForm" style="width: 30%;">
-            <div class="bg-white m-2 form-control-lg">
+            <div class="bg-white m-2 form-control-lg ">
                 <!-- <div class="d-flex justify-content-center"> -->
                     <div class="text-center">
                         <!-- <img style="height:80px;width:auto; margin: 20 20 20 0" src="/images/logo.png"> -->
@@ -55,57 +55,25 @@
                                     Quên mật khẩu
                                 </a>
                             </div>
-                            <div class="row pt-4 m-1">
-                                <button class="col text-white text-sm bg-danger rounded" type="submit">
+                            <!-- <div class="row pt-4"> -->
+                                <button class="text-white text-sm bg-danger rounded mt-4 w-100" type="submit" formaction="#">
                                     Đăng nhập
                                 </button>
-                                <a href="#" onclick="openSignUpForm()" class="col" style="font-size: medium;">Tạo mới tài khoản</a>
-                            </div>
+                            <!-- </div> -->
                             <hr class="solid">
                             <div class="mb-2">
-                                <button class="text-white text-sm bg-primary rounded p-1" formaction="/admin-login.html" type="submit">
-                                    Đăng nhập với tài khoản admin
+                                <button class="text-white text-sm bg-primary rounded p-1" formaction="/index.html" type="submit">
+                                    Đăng nhập với tài khoản học sinh
                                 </button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        <div class="container bg-white m-4 form-control-lg" id="signupForm" style="display: none; width: 50%;">
-            <h4>Tạo tài khoản mới</h4>
-            <form>
-                <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Confirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary mt-3">Tạo tài khoản</button>
-                <button type="submit" onclick="openLoginForm()" class="btn btn-primary mt-3">Quay lại</button>
-            </form>
-        </div>
     </div>
 
     <script>
-        function openSignUpForm() {
-            var signupForm = document.getElementById("signupForm");
-            var loginForm = document.getElementById("loginForm");
-            loginForm.style.display = "none";
-            signupForm.style.display = "block";
-        }
-
-        function openLoginForm() {
-            var signupForm = document.getElementById("signupForm");
-            var loginForm = document.getElementById("loginForm");
-            loginForm.style.display = "block";
-            signupForm.style.display = "none";
-        }
+    
     </script>
 </body>
 
