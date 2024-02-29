@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thống kê</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trang Thống kê</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">Lọc kết quả</div>
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="exam-select">Kỳ thi:</label>
+                                <select id="exam-select" class="form-control">
+                                    <option value="">Tất cả</option>
+                                    <option value="exam1">Kỳ thi 1</option>
+                                    <option value="exam2">Kỳ thi 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date-range">Ngày tháng:</label>
+                                <input type="date" id="date-range-start" class="form-control">
+                                <input type="date" id="date-range-end" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Lọc</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">Bảng thống kê</div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Họ và tên</th>
+                                    <th>Kỳ thi</th>
+                                    <th>Ngày thi</th>
+                                    <th>Điểm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>Kỳ thi 1</td>
+                                    <td>2024-02-01</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Trần Thị B</td>
+                                    <td>Kỳ thi 1</td>
+                                    <td>2024-02-01</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Lê Văn C</td>
+                                    <td>Kỳ thi 2</td>
+                                    <td>2024-02-15</td>
+                                    <td>7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Biểu đồ</div>
+                    <div class="card-body">
+                        <div id="chartContainer" style="height: 300px; width: 100%"></div>
+                    </div>
+                </div>
+                <div class="card d-flex">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Xuất báo cáo</a>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Quay lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+          var chart = new CanvasJS.Chart("chartContainer",
+          {
+            
+            data: [
+      
+            {
+              dataPoints: [
+              { x: 1, y: 2, label: "Venezuela"},
+              { x: 2, y: 2,  label: "Saudi" },
+              { x: 3, y: 1,  label: "Canada"},
+              { x: 4, y: 1,  label: "Iran"},
+              { x: 5, y: 1,  label: "Russia"},
+              { x: 6, y: 7, label: "UAE"},
+              { x: 7, y: 2,  label: "US"},
+              { x: 8, y: 2,  label: "China"}
+              ]
+            }
+            ]
+          });
+      
+          chart.render();
+        }
+        </script>
+        <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+</html>
