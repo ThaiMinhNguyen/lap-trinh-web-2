@@ -2,9 +2,15 @@ function sortByKythi(){
     const selectedExam = document.getElementById("exam-select").value;
     const table = document.getElementById("thongke-hocsinh");
     const rows = table.querySelectorAll("tbody tr");
-
+    // console.log(selectedExam);
     for (const row of rows) {
         const cells = row.querySelectorAll("td");
+        console.log(cells[2].textContent.trim());
+        if (cells[2].textContent.trim() === selectedExam){
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
     }
 }
 
