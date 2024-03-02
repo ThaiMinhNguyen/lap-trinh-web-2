@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết Quả Bài Thi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .result {
+            margin-bottom: 20px;
+        }
+        .result label {
+            font-weight: bold;
+        }
+        .answers {
+            margin-top: 20px;
+        }
+        .answer {
+            margin-bottom: 10px;
+        }
+        .answer label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><style>
+            .KẾT QUẢ BÀI THI CỦA BẠN {
+                color: red;
+            }
+        </style>
+        </h2>
+        <div class="center">
+            <p><b><span style="color: red;">HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG</span></b></p>
+        </div>
+        
+        <div class="result">
+            <label>Tổng số câu:</label> <span id="totalQuestions">20</span><br>
+            <label>Số câu trả lời đúng:</label> <span id="correctAnswers">18</span><br>
+            <label>Điểm số:</label> <span id="score">90/100</span>
+        </div>
+        <button onclick="showAnswers()">Xem câu trả lời chi tiết</button>
+        <div id="answers" class="answers" style="display: none;">
+            <h3>Câu trả lời chi tiết</h3>
+            <div class="answer">
+                <label>Câu 1- BẠN TRẢ LỜI SAI:</label> A (Đáp án đúng: <b>B</b>) <br>
+                <label> Giải thích: 
+                    Câu khó<br>
+    Làm sao bạn có được chỗ ngồi tốt trong buổi hòa nhạc vậy?<br>
+    Bằng cách trúng vé số<br>
+    *at least: tối thiểu<br>
+    *renowned: nổi tiếng<br>
+                </label>
+            </div>
+            <div class="answer">
+                <label>Câu 2:</label> C (Đáp án đúng: C)
+            </div>
+            <div class="answer">
+                <label>Câu 3:</label> B (Đáp án đúng: B)
+            </div>
+            <div class="answer">
+                <label>Câu 4:</label> A (Đáp án đúng: A)
+            </div>
+            <div class="answer">
+                <label>Câu 5:</label> D (Đáp án đúng: D)
+            </div>
+            <div class="answer">
+                <label>Câu 6:</label> C (Đáp án đúng: C)
+            </div>
+            <div class="answer">
+                <label>Câu 7 - BẠN TRẢ LỜI SAI:</label> A (Đáp án đúng: <b>B</b>)<br>
+                <label> Câu khó<br>
+                    Tại sao đèn trong phòng hội nghị tắt?<br>
+                    Vì họ đang xem 1 video<br>
+                    Loại A vì: ko nhắc tới cô gái nào ở đây<br>
+                </label>
+            </div>
+            <div class="answer">
+                <label>Câu 8 - BẠN TRẢ LỜI SAI:</label> C (Đáp án đúng: <b>B</b>)<br>
+                <label> 
+                    Câu đề nghị WHY DON’T WE...<br>
+Câu trả lời thường là đồng ý: Yeah, that a good ...<br>
+                </label>
+            </div>
+            <div class="answer">
+                <label>Câu 9:</label> A (Đáp án đúng: A)
+            </div>
+            <div class="answer">
+                <label>Câu 10:</label> C (Đáp án đúng: C)
+            </div>
+            <div class="answer">
+                <label>Câu 11:</label> A (Đáp án đúng: B)
+            </div>
+            <div class="answer">
+                <label>Câu 12:</label> D (Đáp án đúng: D)
+            </div>
+            <div class="answer">
+                <label>Câu 13:</label> C (Đáp án đúng: B)
+            </div>
+            <div class="answer">
+                <label>Câu 14:</label> C (Đáp án đúng: C)
+            </div>
+            <div class="answer">
+                <label>Câu 15:</label> B (Đáp án đúng: B)
+            </div>
+            <div class="answer">
+                <label>Câu 16:</label> A (Đáp án đúng: A)
+            </div>
+            <div class="answer">
+                <label>Câu 17:</label> D (Đáp án đúng: D)
+            </div>
+            <div class="answer">
+                <label>Câu 18:</label> C (Đáp án đúng: C)
+            </div>
+            <div class="answer">
+                <label>Câu 19:</label> A (Đáp án đúng: A)
+            </div>
+            <div class="answer">
+                <label>Câu 20:</label> C (Đáp án đúng: C)
+            </div>
+            <!-- Thêm các câu trả lời chi tiết khác tại đây -->
+        </div>
+    </div>
+
+    <script>
+        function showAnswers() {
+            var answersDiv = document.getElementById("answers");
+            answersDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>
