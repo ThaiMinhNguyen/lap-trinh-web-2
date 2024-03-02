@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+#banner {
+    background-color: red; /* Màu đỏ cho banner */
+    
+    align-items: center; /* Căn giữa theo chiều dọc */
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    
+  }
+  
+  #examFormContainer {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label, input, textarea, select {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  #questionsContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  #questionsContainer div {
+    margin-bottom: 10px;
+  }
+  
+  #questionsContainer label {
+    font-weight: bold;
+  }
+  
+  #questionsContainer input[type="text"] {
+    width: 90%;
+  }
+  
+  #questionsContainer button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  .exam-results {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Thêm kiểu cho từng câu hỏi trong kết quả */
+  .question-result {
+    margin-top: 20px;
+  }
+  
+  /* Thêm kiểu cho nút chỉnh sửa và nút xoá */
+  .exam-results button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .exam-results button:hover {
+    background-color: #ffffff;
+  }
+  
