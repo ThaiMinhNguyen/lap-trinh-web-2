@@ -1,0 +1,37 @@
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(244, 6, 6);
+}
+
+
+#searchInput {
+    margin-bottom: 20px;
+}
+
+#filterSelect {
+    margin-bottom: 20px;
+}
+
+#examsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.examItem {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 30px;
+    font-size : 20px;
+    border: 1px groove #ccc;
+}
+
+.examItem:hover {
+    background-color: #edcaca;
+    /* #f0f0f0*/
+
+}

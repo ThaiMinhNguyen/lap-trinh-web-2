@@ -38,39 +38,27 @@
                                                                                                 <li class="nav-item  dropdown">
                                 <a data="60" class="nav-link"
                                                                         
-                                    href="" onclick="showLoginAlert()">LUYỆN TẬP<i></i></a>
+                                    href="luyentap.html">LUYỆN TẬP<i></i></a>
                                 
                             </li>
                                                                                                                         <li class="nav-item  dropdown">
                                 <a data="60" class="nav-link"
                                                                         
-                                    href="" onclick="showLoginAlert()">ĐỀ THI GIỮA KỲ<i></i></a>
+                                    href="luyentap.html">ĐỀ THI GIỮA KỲ<i></i></a>
                                 
                             </li>
                                                                                                                         <li class="nav-item  dropdown">
                                 <a data="60" class="nav-link"
                                                                         
-                                    href="" onclick="showLoginAlert()">ĐỀ THI CUỐI KỲ<i></i></a>
+                                    href="luyentap.html">ĐỀ THI CUỐI KỲ<i></i></a>
                             
-                            </li>
+                            </li>            
             <div class="account-box" style="position: fixed;top: 10px;right: 10px;">
-                                <a href="admin-login.html">
-                    <span>Admin</span>
-                    <i class="user-icon"></i>
-                </a>
-                        </div>                  
-            <div class="account-box" style="position: fixed;top: 10px;right: 150px;">
-                                    <a href="login.html">
-                        <span>Đăng nhập</span>
+                                    <a href="index.html">
+                        <span>Đăng xuất</span>
                         <i class="user-icon"></i>
                     </a>
                             </div>
-            <div class="account-box" style="position: fixed;top: 10px;right: 320px;">
-                                <a href="register.html">
-                    <span>Đăng ký</span>
-                    <i class="user-icon"></i>
-                </a>
-                        </div>
         </nav>
     </div>
 </header>
@@ -81,15 +69,51 @@
         <div class="middle" style="margin-top:15px">
             <h1>TRẮC NGHIỆM ONLINE 1</h1>
             <p>ĐA DẠNG - THÔNG MINH - CHÍNH XÁC</p>
-            <img src="images/logo.jpg" alt="Hình ảnh" width="500" height="500">
         </div>
     </div>
     <!--/BANNER-->
-    <script>
-        function showLoginAlert() {
-            alert("Mời bạn đăng nhập để sử dụng tính năng");
-        }
-    </script>
+    <!--FEATURED LIST-->
+    <section class="featued-list" id="featued-list">
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top:120px">
+                <div class="col-12 col-lg-3 col-sm-12 relative hover-link"
+                    onclick="window.location.href='luyentap.html'">
+                    <div class="shadow-box">
+                        <div class="img"><img height="100"
+                                src="images/feature1.jpg"
+                                alt="Đề thi học kỳ" /></div>
+                        <h3>LUYỆN TẬP</h3>
+                        <p>Tập luyện với ngân hàng câu hỏi . Có thể làm mọi lúc ,mọi nơi. Không giới hạn thời gian làm bài</p>
+                        <a href="luyentap.html" class="btn orange">Làm ngay</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-12 relative hover-link"
+                    onclick="window.location.href='luyentap.html'">
+                    <div class="shadow-box">
+                        <div class="img"><img height="100"
+                                src="images/feature2.jpg"
+                                alt="Đề giữa kỳ" /></div>
+                        <h3>ĐỀ THI GIỮA KỲ</h3>
+                        <p>Tổng hợp các đề thi giữa kỳ.Làm bài trắc nghiệm , có điểm ngay sau khi làm.</p>
+                        <a href="luyentap.html" class="btn orange">Làm ngay</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-12 relative hover-link"
+                    onclick="window.location.href='luyentap.html'">
+                    <div class="shadow-box">
+                        <div class="img"><img height="100"
+                                src="images/feature3.jpg"
+                                alt="Đề cuối kỳ" /></div>
+                        <h3>ĐỀ THI CUỐI KỲ</h3>
+                        <p>Tổng hợp bài thi cuối kỳ.Làm bài trắc nghiệm , có điểm ngay sau khi làm.
+                        </p>
+                        <a href="luyentap.html" class="btn orange">Làm ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/FEATURED LIST-->
 </body>
 
 </html>

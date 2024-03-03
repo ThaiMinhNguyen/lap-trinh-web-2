@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-    <title>Exam Management</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Exam Management</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div id="banner"><h1>Tạo/Chỉnh sửa bài thi</h1></div>
+  <div id="banner">
+    <h1>Tạo/Chỉnh sửa bài thi</h1>
+  </div>
   <button id="addExamButton" onclick="showExamForm()">Tạo mới</button>
+  <button onclick="location.href='../admin-dashboard/admin-dashboard.html'">Quay lại</button>
   <div class="row justify-content-center">
     <div class="col-md-6">
-            <div id="examFormContainer" class="bg-white p-4" style="display: none;">
-            <label for="examName">Tên kỳ thi:</label>
-            <input type="text" id="examName" required><br>
+      <div id="examFormContainer" class="bg-white p-4" style="display: none;">
+        <label for="examName">Tên kỳ thi:</label>
+        <input type="text" id="examName" required><br>
 
-            <label for="description">Mô tả:</label>
-            <textarea id="description" required></textarea><br>
+        <label for="description">Mô tả:</label>
+        <textarea id="description" required></textarea><br>
 
-            <label for="examType">Loại kỳ thi:</label>
-            <select id="examType" required>
-            <option value="Tự do">Tự do</option>
-            <option value="Giới hạn thời gian">Thời gian cụ thể</option>
-            </select><br>
+        <label for="examType">Loại kỳ thi:</label>
+        <select id="examType" required>
+          <option value="Tự do">Tự do</option>
+          <option value="Giới hạn thời gian">Thời gian cụ thể</option>
+        </select><br>
 
-            <label for="questionFile">Nhập đề thi (Excel):</label>
-            <input type="file" id="questionFile" accept=".xlsx, .xls"><br>
+        <label for="questionFile">Nhập đề thi (Excel):</label>
+        <input type="file" id="questionFile" accept=".xlsx, .xls"><br>
 
-            <h2>Danh sách câu hỏi:</h2>
+        <h2>Danh sách câu hỏi:</h2>
 
-            <div id="questionsContainer" class="bg-light p-4">
-            <!-- Questions will be added dynamically using JavaScript -->
-            </div>
-
-            <button type="button" onclick="addQuestion()">Thêm câu hỏi</button>
-
-            <button type="button" onclick="submitExam()">Lưu bài thi</button>
+        <div id="questionsContainer" class="bg-light p-4">
+          <!-- Questions will be added dynamically using JavaScript -->
         </div>
+
+        <button type="button" onclick="addQuestion()">Thêm câu hỏi</button>
+
+        <button type="button" onclick="submitExam()">Lưu bài thi</button>
+      </div>
     </div>
-    </div>
+  </div>
   <div id="examResultsContainer"></div>
   <script src="script.js"></script>
 </body>
+
 </html>
